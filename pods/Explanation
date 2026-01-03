@@ -2,6 +2,7 @@ Init containers run before the application and are used for setup tasks like wai
 Sidecar real world example: logging monitoring proxying
 Init example: • Run DB migrations • Verify secrets exist • Pull configs from Vault • Wait for Kafka / Redis
 They are defined in pod level multiple container. They cannot exist as standalone system. In real lifr scenarioes these pods will be defined uder a deployment.
+Refer: train with shubham Springboot-BankApp/k8s/deployment for real world init container example
 
 apiVersion: apps/v1
 kind: Deployment
